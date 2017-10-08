@@ -75,19 +75,18 @@ body, html {
     </a>
   </div>
 
-  <!-- Navbar on small screens TODO: benv. ; need to update this for our site -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="intex.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="https://mcc-compsci.github.io/#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="https://mcc-compsci.github.io/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="http://www.miracosta.edu/#" class="w3-bar-item w3-button">MCC SITE</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MIRACOSTA CS CLUB</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class ="w3-hide-small">MIRACOSTA </span><span class="w3-hide-large">MCC </span>CS CLUB</span>
   </div>
 </div>
 
@@ -98,13 +97,12 @@ body, html {
   <p>Starting in Fall 2017, the CS Club was restarted and reinvigorated by a new generation of young computer scientists. We hope to plan
      some awesome events, including hackathons, tech projects with Raspberry Pi's, this website, and a trip to Google! Please
      contact us if you'd like to join in on the awesome activities and get to know us more. The membership table below links
-     to the github accounts of our talented young developers.
-   </p>
+     to the github accounts of our talented young developers.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>MiraCosta Club Members</b></p><br>
-      <!-- TODO: benv; INSERT AN IMAGE OF THE CLUB DOING AWESOME STUFF, AND FIX THE ICON IMAGE-->
-      <img src="images/PLACEHOLDER300X200.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <!-- TODO: benv; INSERT AN IMAGE OF THE CLUB DOING AWESOME STUFF-->
+      <img src="images/empty-classroom-placeholder.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- TODO: benv; make this available on small devices and format better -->
@@ -150,7 +148,7 @@ body, html {
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">50+</span><br>
-    Members
+    Club Members
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">Meeting Time</span><br>
@@ -162,7 +160,7 @@ body, html {
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">Tutoring Hours</span><br>
-    TBD
+    To be determined...
   </div>
 </div>
 
@@ -175,7 +173,7 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
+  <h3 class="w3-center">OUR PROJECTS</h3>
     <p class="w3-center"><em>Here is a preview of our member's work to-date<br> Click on the images to make them bigger</em></p><br>
 
   <!--TODO benv; figure out what we want to do here. can use images or change this to be a table. I like images better, with a link
@@ -250,9 +248,9 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Address: </b> 1 Barnard Dr, Oceanside, CA 92056<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Phone:</b>  DO WE EVEN HAVE A PHONE NUM?<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Email:</b>  mcccompsciclub@gmail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>1 Barnard Dr, Oceanside, CA 92056<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Phone:</b> TBD<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Email:</b> mcccompsciclub@gmail.com<br>
       </div>
       <!-- TODO benv; we need to fix the image here and adapt this text for something more appropriate -->
       <!-- TODO benv; NOAH - we need your help to get the contact button and fields to work properly -->
@@ -275,17 +273,18 @@ body, html {
   </div>
 </div>
 
-<!-- TODO benv; the images here need to be overwritten by social media icons -->
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="https://mcc-compsci.github.io/#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/MCCCompSciClub/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/compsciclub_mcc/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!-- TODO add these accounts once the club has them
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
   </div>
 
   <!-- TODO benv; can we just remove this? Very Tacky. Dont want any legal trouble though -->
