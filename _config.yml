@@ -1,0 +1,28 @@
+name: CS@MCC
+title: CS@MCC
+description: The new prototype website for the Computer Science Club at MiraCosta College.
+url: "https://mcc-csclub.github.io"
+logo: logo-titled.jpg
+
+social:
+  github: MCC-CSClub
+  twitter: MCC-CSClub
+  email: MCC-CSClub@gmail.com
+
+markdown: kramdown
+theme: minima
+
+collections:
+  projects:
+  members:
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
