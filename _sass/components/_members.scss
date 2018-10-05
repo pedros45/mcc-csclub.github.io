@@ -1,0 +1,35 @@
+div.members {
+    td.member {
+        padding-left: 1em;
+    }
+
+    img.profile {
+    	border-radius: 10px;
+        height: 125px;
+    }
+
+    img.icon {
+        position: relative;
+        top: 5px;
+        border-radius: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 3px;
+    }
+
+    span {
+        display:block;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    table {
+        table-layout:fixed;
+    }
+
+    td {
+        padding-bottom: 1.5em;
+    }
+}

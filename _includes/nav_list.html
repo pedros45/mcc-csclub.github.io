@@ -1,0 +1,22 @@
+{% for node in pages_list %}
+
+    {% if group == null or group == node.group %}
+
+        {% if page.url == node.url %}
+            <li><a class="active" href="{{ node.url }}">{{ node.title }}</a></li>
+        {% elsif node.order != 0 %}
+            <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+
+    {% endif %}
+
+{% endfor %}
+<hr style="margin-right: 10px">
+<h4 style="margin: 10px 0px">Visit:</h4>
+<li><a href="https://miracosta.campuslabs.com/engage/organization/computerscienceclub" target="_blank">CS@<span style="color: #00ceff;">MCC</span> Engage</a></li>
+<li><a href="https://www.miracosta.edu/" target="_blank">MiraCosta College</a></li>
+
+<!--<a href="https://discord.gg/gKfG8Kb"><img src="/assets/discord-banner.png" style="width: 130px"/></a>-->
+
+{% assign pages_list = nil %}
+{% assign group = nil %}

@@ -1,0 +1,19 @@
+<tr>
+    <td>
+        {% if project.image_url %}<img class="profile" src="{{ project.image_url }}" alt="{{ project.name }}'s picture">{% endif %}
+    </td>
+    <td class="project">
+        <h3 style="margin:0">{{ project.name }}</h3>
+        <p>{{ project.short_bio }}</p>
+        <span>
+          {% if project.website %}
+            <img class="icon" src="/assets/link-variant.png"><a href="{{ project.website }}">{{ project.website }}</a>
+          {% endif %}
+        </span>
+        <span>
+          {% if project.github %}
+            <img class="icon" src="/assets/github-circle.png"><a href="https://github.com/{{ project.github }}">{{ project.github }}</a>
+          {% endif %}
+        </span>
+    </td>
+</tr>

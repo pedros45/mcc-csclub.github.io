@@ -1,0 +1,16 @@
+---
+layout: default
+group: "navigation"
+title: Members
+permalink: /members/
+order: 4
+---
+
+<div class="members">
+    <h1>{{ site.members.size }} {% if site.members.size == 1 %}Member{% elsif site.members.size != 1 %}Members{% endif %}</h1>
+    <table>
+    {% for member in site.members %}
+        {% include member_table.html %}
+    {% endfor %}
+    </table>
+</div>
